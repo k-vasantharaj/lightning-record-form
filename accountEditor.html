@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account Details">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-record-form
+                object-api-name={objectApiName}
+                record-id={recordId}
+                fields={fields}
+                onsuccess={handleSuccess}
+                onerror={handleError}>
+            </lightning-record-form>
+
+        </div>
+
+    </lightning-card>
+</template>
